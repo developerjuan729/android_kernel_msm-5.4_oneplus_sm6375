@@ -467,10 +467,12 @@ int nf_conntrack_sctp_packet(struct nf_conn *ct,
 			 * port reuse by client or NAT middlebox cannot
 			 * keep entry alive indefinitely (incl. nat info).
 			 */
+			/*
 			if (new_state == SCTP_CONNTRACK_CLOSED &&
 			    old_state == SCTP_CONNTRACK_CLOSED &&
 			    nf_ct_is_confirmed(ct))
 				ignore = true;
+			*/
 		}
 
 		ct->proto.sctp.state = new_state;
