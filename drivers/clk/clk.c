@@ -3669,7 +3669,6 @@ static void clk_core_reparent_orphans_nolock(void)
 			 * clk_set_rate_range() doesn't drop the frequency.
 			 */
 			orphan->req_rate = orphan->rate;
->>>>>>> d85841e4b2ff (clk: Initialize orphan req_rate)
 		}
 	}
 }
